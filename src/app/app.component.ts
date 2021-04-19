@@ -1,3 +1,4 @@
+import { Student } from './student/student.model';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,19 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  luke = {
-    name: 'Luke',
-    isJedi: true,
-    template: 'Coruscant'
-  }
+  students : Student[] = [
 
-  leia = {
-    name: 'leia',
-    isJedi: false
-  }
+    {
+      name: 'Luke',
+      isJedi: true,
+      template: 'Coruscant'
+    },
 
-  han = {
-    name: 'han',
-    isJedi: false
-  }
+    {
+      name: 'leia',
+      isJedi: false
+    },
+
+    {
+      name: 'han',
+      isJedi: false
+    }
+  ]
 }
