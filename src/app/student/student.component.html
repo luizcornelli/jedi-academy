@@ -1,5 +1,9 @@
-<div>Student: {{ student.name }}
-  <div *ngIf="student.isJedi">
-    Jedi template: Coruscant
+<div *ngIf="student">
+  Student: {{ student?.name }}
+  <div *ngIf="student?.isJedi">
+    Jedi template: {{ student?.template }}
   </div>
 </div>
+<p *ngIf="!student">
+  Sem dados para exibir
+</p>
